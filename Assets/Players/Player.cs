@@ -25,4 +25,10 @@ public class Player : NetworkBehaviour {
         }
 
 	}
+
+    public override void OnStartLocalPlayer()
+    {
+        Camera view = GetComponentInChildren<Camera>();
+        view.enabled = true;
+    }
 }
